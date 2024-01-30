@@ -6,7 +6,7 @@ import java.sql.SQLException;
 
 public class ConnectionManager {
 
-	private static String URL = "jdbc:mysql://localhost:3306/itemdb";
+	private static String URL = "jdbc:mysql://localhost:3306/task_db";
 
 	/* データベースのユーザとパスワード */
 	private static String USER = "root";

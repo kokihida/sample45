@@ -1,5 +1,5 @@
 package model.entity;
 
-public class SampleBean {
+public class StatusBean {
 
 }
