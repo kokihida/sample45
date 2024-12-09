@@ -12,7 +12,6 @@
 	<form action="LoginServlet" method="POST">
 		<label for="username">ユーザーID:</label> <input type="text" id="username"
 			name="userid" required><br> 
-		
 		<label for="password">パスワード:</label>
 		<input type="password" id="password" name="password" required><br>
 		<br> 

@@ -11,7 +11,9 @@ import java.util.List;
 import model.entity.TaskBean;
 
 public class TaskShowAllDAO {
-
+	/**
+	 * @author 肥田
+	 */
 	//一覧を表示させるためのメソッド
 	public List<TaskBean> taskShowAll() throws ClassNotFoundException, SQLException {
 
@@ -22,7 +24,7 @@ public class TaskShowAllDAO {
 
 			//SQLの実行
 			ResultSet res = pstmt.executeQuery();
-			
+
 			while (res.next()) {
 				String task_name = res.getString("t1.task_name");
 				String category_name = res.getString("t2.category_name");
@@ -30,7 +32,7 @@ public class TaskShowAllDAO {
 				String user_id = res.getString("user_id");
 				String status_code = res.getString("status_code");
 				String memo = res.getString("memo");
-				
+
 				TaskBean taskbean = new TaskBean();
 				taskbean.setTaskName(task_name);
 				taskbean.setCategoryName(category_name);
@@ -38,7 +40,7 @@ public class TaskShowAllDAO {
 				taskbean.setUserId(user_id);
 				taskbean.setStatusCode(status_code);
 				taskbean.setMemo(memo);
-				
+
 				returnbeanList.add(taskbean);
 			}
 		}

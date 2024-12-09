@@ -20,7 +20,7 @@
 	%>
 	ようこそ<%=uName %>さん<br>
 	
-	<form action="InsertServlet" method="GET">
+	<form action="TaskAddInsertServlet" method="GET">
 		<input type="submit" value="タスク登録画面">
 	</form>
 	<br>
